@@ -1,0 +1,7 @@
+{
+  "name": "AJS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
