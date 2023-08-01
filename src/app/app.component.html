@@ -1,3 +1,42 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main" contentId="main" side="start" type="overlay">
+   
+      <ion-icon class="left" name="person-circle-outline"></ion-icon><h3>Mayur</h3>
+   
+    <ion-content>
+      <ion-menu-toggle>
+        <ion-item routerLink="/dashboard">
+          <ion-label> Visit List </ion-label>
+          <ion-icon slot="start" name="location-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/dashboard">
+          <ion-label> Visited List </ion-label>
+           <ion-icon slot="start" name="location-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+     
+      <ion-menu-toggle>
+        <ion-item routerLink="/my-attendance">
+          <ion-label> Attendance </ion-label>
+          <ion-icon slot="start" name="person-add-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <!-- <ion-menu-toggle class="down">
+        <ion-item routerLink="/wel">
+          <ion-label> Logout </ion-label>
+          <ion-icon
+            name="log-out"
+            size="small"
+            slot="start"
+            (click)="getLogout()"
+          ></ion-icon>
+        </ion-item>
+      </ion-menu-toggle> -->
+      <button (click)="getLogout()"><ion-icon class="icon" fill="clear" name="exit-outline"></ion-icon>Log Out</button>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

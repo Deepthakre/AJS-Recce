@@ -1,9 +1,22 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'io.ionic.ajs',
   appName: 'AJS',
   webDir: 'www',
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 3000,
+      launchAutoHide: true,
+      launchFadeOutDuration: 3000,
+      backgroundColor: "#ffffffff",
+      androidSplashResourceName: "splash",
+      androidScaleType: "FIT_CENTER",
+      splashFullScreen: true,
+      splashImmersive: true,
+      useDialog: true,
+    },
+  },
   server: {
     androidScheme: 'https'
   }

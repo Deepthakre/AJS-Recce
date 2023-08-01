@@ -1,0 +1,28 @@
+.blue-background{
+    background-color: rgba(253, 255, 255, 0.5);
+    height: 200%;
+    margin-left: 20;
+    margin-right: 20;
+    margin-top: -0;
+    margin-bottom: -0;
+}
+h6{
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+ion-content {
+    --padding-bottom: 10px; // Adds some padding at the bottom to make sure the content is not too close to the bottom edge /
+  }
+  // .tex{
+  //   margin-left: -40px;
+  // }
+  .det{
+    margin-top: -18px;
+    margin-left: 20px;
+  }
+  .io{
+    font-size: 20px;
+    margin-top: 1px;
+  }

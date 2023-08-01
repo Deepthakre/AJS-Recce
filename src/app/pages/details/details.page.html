@@ -1,0 +1,222 @@
+<!-- <ion-content [fullscreen]="true">
+  <ion-card class="blue-background">
+ <ion-card-header><ion-icon name="chevron-back-outline"></ion-icon></ion-card-header>
+    <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
+    
+    <!-- <ion-card-content>
+      
+  <ion-grid fixed class="">
+    <ion-row class="ion-no-padding">
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-small text-dark"> Project Name:</span> <br>
+          <h6>Mayur shelar</h6>
+        </div>
+      </ion-col>
+      <ion-col size="8">
+        <div class="ion-text-center">
+          <span class="text-statics-small text-dark">Date:</span> <br>
+          <h6>6-02-2021</h6>
+        </div>
+      </ion-col>
+      <ion-col >
+        <div class="ion-text-left">
+          <span class="text-statics-small text-dark">Venue Name</span> <br>
+          <h6>Sosho Kitchen & bar</h6>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+    <ion-row>
+      <ion-col >
+     
+          <span class="text-statics-small text-dark">Address</span> <br>
+          <h6>Wing -A 202, Orchid business park, militry Rd andheri ,Mumbai 400059</h6>
+    
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+     
+          <span class="text-statics-small text-dark">Contact No.</span> <br>
+          <h6>+9198764535</h6>
+    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+    <ion-row>
+      <ion-col> 
+        <p>Venue Structure Image</p>
+        <ion-item>
+          <ion-button class="margin" color="light">Upload Photos</ion-button>
+          <ion-icon name="add-circle-outline" slot="end" > </ion-icon><br><br>
+         
+        </ion-item>
+         
+       
+     </ion-col>
+     </ion-row>
+  
+    
+    
+ 
+  </ion-card-content>
+  </ion-card>
+
+</ion-content> -->
+
+
+<ion-content [fullscreen]="true">
+  <ion-card class="blue-background">
+ <ion-card-header><ion-icon class="io" routerLink="/dashboard" name="chevron-back-outline"></ion-icon><h6 class="det">Details</h6></ion-card-header>
+    <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
+    
+    <ion-card-content>
+      
+  <ion-grid fixed class="">
+    <ion-row class="ion-no-padding">
+      <ion-col size="6">
+        <div class="ion-text-center">
+          <span  class="text-statics-small text-dark tex"> Project Name:</span> <br>
+          <h6 class="tex">Mayur shelar</h6>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="ion-text-center">
+          <span class="text-statics-small text-dark">Date:</span> <br>
+          <h6>6-02-2021</h6>
+        </div>
+      </ion-col>
+      <ion-col size="12" >
+        <div class="ion-text-left">
+          <span class="text-statics-small text-dark">Venue Name</span> <br>
+          <h6>Sosho Kitchen & bar</h6>
+        </div>
+      </ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+     
+          <span class="text-statics-small text-dark">Address</span> <br>
+          <h6>Wing -A 202, Orchid business park, militry Rd andheri ,Mumbai 400059</h6>
+    
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+     
+          <span class="text-statics-small text-dark">Contact No.</span> <br>
+          <h6>+9198764535</h6>
+          <!-- <ion-button shape="round" class="btm" fill="clear">Hold</ion-button>&nbsp;&nbsp; -->
+          <ion-button shape="round"  fill="clear" class="btm">Hold</ion-button>&nbsp;&nbsp;
+          <ion-button shape="round" class="btm1" fill="clear">cancel</ion-button>
+          <ion-textarea label="textarea" labelPlacement="floating" fill="solid" placeholder="Enter text"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+     
+          <!-- <span class="text-statics-small text-dark">Contact No.</span> <br>
+          <h6>+9198764535</h6> -->
+    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+    <ion-row>
+      <ion-col>
+        <p>Venue Structure Image</p>
+         
+          <ion-button class="margin" color="light">Upload Photos</ion-button>
+          <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+       
+      </ion-col>
+     </ion-row>
+      <ion-item  >
+        <ion-input placeholder="Description" type="text" clearInput="true"> </ion-input>
+        
+      </ion-item>
+     
+      <ion-item  >
+        <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+     
+       
+        <ion-button class="margin" color="light">Upload Photos</ion-button>
+        <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+        <ion-icon class="left" name="trash-outline"></ion-icon>
+    </ion-col>
+   </ion-row>
+    <ion-item  >
+      <ion-input placeholder="Description"  type="text" clearInput="true"> </ion-input>
+      
+    </ion-item> 
+   
+    <ion-item  >
+      <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+
+    
+
+</ion-item>
+<ion-row>
+  <ion-col>
+    <p>Reiki Image</p>
+     
+      <ion-button class="margin" color="light">Upload Photos</ion-button>
+      <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+   
+  </ion-col>
+ </ion-row>
+  <ion-item  >
+    <ion-input placeholder="Description" type="text" clearInput="true"> </ion-input>
+    
+  </ion-item>
+ 
+  <ion-item  >
+    <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+
+  
+
+</ion-item>
+
+<ion-row>
+  <ion-col>
+    <p>Video Upload (max 2)</p>
+     
+      <ion-button class="margin" color="light">Upload Video</ion-button>
+      <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+   
+  </ion-col>
+ </ion-row>
+  <ion-item  >
+    <ion-input placeholder="Description" type="text" clearInput="true"> </ion-input>
+    
+  </ion-item>
+ 
+  <ion-item  >
+    <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+
+  
+
+</ion-item> 
+
+<ion-row>
+  
+  <ion-col>
+    <ion-button shape="round"  expand="full" routerLink="/details1" fill="clear"   strong="true" class="ion-margin"   >
+    Submit
+      
+    </ion-button>
+  </ion-col>
+  
+</ion-row>
+
+  </ion-card-content>
+  </ion-card>
+  
+</ion-content>

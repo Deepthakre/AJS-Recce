@@ -1,0 +1,101 @@
+<ion-content>
+  <ion-card class="blue-background" fulscreen="true">
+    <ion-card-header><ion-icon class="io" routerLink="/dashboard" name="chevron-back-outline"></ion-icon><h6 class="det">Details</h6></ion-card-header>
+    <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
+    
+    <ion-card-content>
+      
+  <ion-grid fixed class="">
+    <ion-row class="ion-no-padding">
+      <ion-col size="8">
+        <div class="ion-text-left">
+          <span class="text-statics-small text-dark"> Project Name:</span> <br>
+          <h6>Mayur shelar</h6>
+        </div>
+      </ion-col>
+      <ion-col size="4"> 
+        <div class="ion-text-right">
+          <span class="text-statics-small text-dark">Date:</span> <br>
+          <h6>6-02-2021</h6>
+        </div>
+      </ion-col>
+      <ion-col >
+        <div class="ion-text-left">
+          <span class="text-statics-small text-dark">Venue Name</span> <br>
+          <h6>Sosho Kitchen & bar</h6>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+     
+          <span class="text-statics-small text-dark">Address</span> <br>
+          <h6>Wing -A 202, Orchid business park, militry Rd andheri ,Mumbai 400059</h6>
+    
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+     
+          <span class="text-statics-small text-dark">Contact No.</span> <br>
+          <h6>+9198764535</h6>
+    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+    <ion-row *ngFor="let product of products">
+      <ion-col>
+        <p>Venue Structure Image</p>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img [src]="product.imageUrl" alt="Product Image">
+          </ion-thumbnail>
+        </ion-item>
+     <p>Description</p>
+        <h6> {{product.description}}</h6>
+
+        <p>Location</p>
+        <h6>{{product.location}}</h6>
+      </ion-col>
+_____________________________________________________________________________________________
+      <ion-col>
+        <p>Reiki Image</p>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img [src]="product.imageUrl" alt="Product Image">
+          </ion-thumbnail>
+        </ion-item>
+     <p>Description</p>
+        <h6> {{product.description}}</h6>
+
+        <p>Location</p>
+        <h6>{{product.location}}</h6>
+      </ion-col>
+_____________________________________________________________________________________________      
+<ion-col>
+  <p>Video Upload</p>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img [src]="product.imageUrl" alt="Product Image">
+    </ion-thumbnail>
+  </ion-item>
+<p>Description</p>
+  <h6> {{product.description}}</h6>
+
+  <p>Location</p>
+  <h6>{{product.location}}</h6>
+</ion-col>
+     </ion-row>
+    
+  
+    
+    
+ 
+  </ion-card-content>
+  
+  </ion-card>
+
+</ion-content>
