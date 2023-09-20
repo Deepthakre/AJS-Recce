@@ -16,7 +16,7 @@ ion-content {
   --padding-bottom: 10px; // Adds some padding at the bottom to make sure the content is not too close to the bottom edge /
 }
 ion-item {
-  margin-left: 8%;
+  margin-left: 8%; 
   margin-right: 8%;
   margin-top: 14px;
 border-color: black;
@@ -26,8 +26,8 @@ border-color: black;
   box-shadow: 10 6px 4px -4px var(--ion-color-medium);
 background-color: rgb(105, 107, 106);
 color: rgb(133, 136, 135);
-
-}
+ 
+} 
 // ion-icon{
 //   margin-left: 39%;
 //   font-size: 120%;
@@ -72,8 +72,9 @@ ion-item{
   border-color: 2px solid black;
 }
 .det{
-  margin-top: -18px;
+  margin-top: -20px;
   margin-left: 20px;
+  font-size: 17px;
 }
 .io{
   font-size: 20px;
@@ -95,4 +96,14 @@ height: 20%;
 }
 ion-textarea{
   margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .ion{
+   margin-left: 60%;
+   font-size: 25px;
+  }
+  .left{
+    font-size: 25px;
+  }
 }

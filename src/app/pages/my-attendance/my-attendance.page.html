@@ -1,65 +1,110 @@
 <!-- <ion-datetime datetime="datetime"></ion-datetime> -->
+<!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+<!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
 <ion-content [fullscreen]="true">
   
   <!-- <ion-datetime presentation="month-year"></ion-datetime> -->
-  <ion-icon class="hlo" routerLink="/dashboard" name="chevron-back-outline"></ion-icon><h6>My Attendance</h6>
-<p class="left"> <ion-icon name="chevron-back-outline"></ion-icon> <strong>2023</strong> <ion-icon name="chevron-forward-outline"></ion-icon> </p>
-<p class="right"><ion-icon class="my" name="arrow-back-outline"></ion-icon>&nbsp;&nbsp;&nbsp;November &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> october</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; December <ion-icon name="arrow-forward-outline"></ion-icon></p>
-    <ion-card>
-      <ion-grid>
-        <ion-row>
-           <ion-col size="3" size-sm="3"> <h5 class="wel">11 <br><br>Tue</h5></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch in</h5>
-            <p>10.00 pm</p>
-          </ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch out</h5>    <p>6.00 pm</p></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Status</h5>
-            <p class="text-success">Present</p></ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card>
+  <ion-icon class="hlo" routerLink="/home" name="chevron-back-outline"></ion-icon><h6 style="margin-top: -25px;font-size: 18px;">My Attendance</h6>
+ <p style="text-align: center;"> <ion-icon  name="arrow-back-outline" (click)="changeYear(-1)"></ion-icon> <b> {{ selectedYear }}</b> <ion-icon name="arrow-forward-outline" (click)="changeYear(1)"></ion-icon> </p> 
 
-    <ion-card>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="3" size-sm="3"> <h5 class="wel">11 <br><br>Tue</h5></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch in</h5>
-            <p>10.00 pm</p>
-          </ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch out</h5>    <p>6.00 pm</p></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Status</h5>
-            <p class="text-success">Present</p></ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card>
 
-    <ion-card>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="3" size-sm="3"> <h5 class="wel">11 <br><br>Tue</h5></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch in</h5>
-            <p>10.00 pm</p>
-          </ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch out</h5>    <p>6.00 pm</p></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Status</h5>
-            <p class="text-success">Present</p></ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card>
+  <ion-grid style="margin-left: 10px;">
 
-    <ion-card>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="3" size-sm="3"> <h5 class="wel">11 <br><br>Tue</h5></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch in</h5>
-            <p>10.00 pm</p>
-          </ion-col>
-          <ion-col size="3" size-sm="3"><h5>Punch out</h5>    <p>6.00 pm</p></ion-col>
-          <ion-col size="3" size-sm="3"><h5>Status</h5>
-            <p class="text-success">Present</p></ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card>
+    <!-- <ion-row> -->
+      <!-- Year slider -->
+      <!-- <ion-col size="2">
+        <ion-icon name="chevron-back" (click)="changeYear(-1)"></ion-icon>
+      </ion-col>
+      <ion-col size="8" class="ion-text-center">
+        {{ selectedYear }}
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="chevron-forward" (click)="changeYear(1)"></ion-icon>
+      </ion-col>
+    </ion-row> -->
+
+    <ion-row>
+      <!-- Month slider -->
+      <ion-col size="2">
+        <ion-icon class="ico" name="arrow-back-outline" (click)="changeMonth(-1)"></ion-icon>
+      </ion-col>
+      <ion-col size="8" class="ion-text-center">
+        <span [ngClass]="{'selected-month': selectedMonth === currentMonth}">
+         <b>{{ selectedMonth }}</b> 
+        </span>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="arrow-forward-outline" (click)="changeMonth(1)"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<div>
+  <ion-grid class="grid">
+    <ion-row class="data">
+      <ion-col class="ion-col" size="3"><div class="divitem"><span>11 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch in</ion-label> 10.00.AM</div></ion-col>
+      <ion-col class="ion-col" size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols"size="3"><div class="present">Status<ion-label class="Status" style="color: rgb(58, 171, 58);">Present</ion-label> </div></ion-col>
+
+    </ion-row>
+ 
+    <ion-row class="data">
+      <ion-col class="ion-col" size="3"><div class="divitem"><span>12 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col" size="3"><div class="am"><ion-label>Punch in</ion-label> 10.AM</div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols" size="3"><div class="present">Status<ion-label class="Status" style="color: rgb(58, 171, 58);">Present</ion-label> </div></ion-col>
+    </ion-row>
+ 
+    <ion-row class="data">
+      <ion-col class="ion-col"size="3"><div class="divitem"><span>13 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch in</ion-label>
+        10.AM </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols" size="3"><div class="present">Status<ion-label class="Status" style="color: rgb(58, 171, 58);">Present</ion-label> </div></ion-col>
+
+    </ion-row>
+ 
+    <ion-row class="data">
+      <ion-col class="ion-col"size="3"><div class="divitem"><span>14 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"> <ion-label>Punch in</ion-label> 10.AM</div></ion-col>
+      <ion-col class="ion-col" size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols" size="3"><div class="present">Status<ion-label class="Status"style="color: red;">Absent</ion-label> </div></ion-col>
+
+    </ion-row>
+ 
+    <ion-row class="data">
+      <ion-col class="ion-col"size="3"><div class="divitem"><span>15 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"> <ion-label>Punch in</ion-label> 10.AM</div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols"size="3"><div class="present">Status<ion-label class="Status" style="color: rgb(58, 171, 58);">Present</ion-label> </div></ion-col>
+
+    </ion-row>
+
+    <ion-row class="data">
+      <ion-col class="ion-col" size="3"><div class="divitem"><span>16 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"> <ion-label>Punch in</ion-label> 10.AM</div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols"size="3"><div class="present">Status<ion-label class="Status" style="color: rgb(58, 171, 58);">Present</ion-label> </div></ion-col>
+
+    </ion-row>
+ 
+    <ion-row class="data">
+      <ion-col class="ion-col" size="3"><div class="divitem"><span>17 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"> <ion-label>Punch in</ion-label> 10.AM</div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols"size="3"><div class="present">Status<ion-label class="Status" style="color: red;">Absent</ion-label> </div></ion-col>
+
+    </ion-row >
+ 
+    <ion-row class="data">
+      <ion-col class="ion-col"size="3"><div class="divitem"><span>18 <br>Tue</span> </div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"> <ion-label>Punch in</ion-label> 10.AM</div></ion-col>
+      <ion-col class="ion-col"size="3"><div class="am"><ion-label>Punch Out</ion-label> 06.30.AM</div></ion-col>
+      <ion-col class="ion-cols" size="3"><div class="present">Status<ion-label class="Status" style="color: rgb(58, 171, 58);">Present</ion-label> </div></ion-col>
+
+    </ion-row>
+  </ion-grid>
+</div>
 
     
   

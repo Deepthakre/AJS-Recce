@@ -1,216 +1,79 @@
-#bg {
-    height: 30%;
-    width: 500px;
-  background-color: #3f0303;
-    //   background: var(--ion-color-dark) url('https://media.istockphoto.com/id/469090778/photo/interior-of-empty-modern-hair-and-beauty-salon.jpg?b=1&s=170667a&w=0&k=20&c=GGxqz2p8I4PEaMa1OW8sXz06Z0yD-vYsfZA9_nalgjs=') no-repeat center center/cover;
-    border-radius: 80 0 45% 45%;
-  
-    position: relative;
-}
-ion-content{
-    background-color: #3f0303;
-}
-  
- 
-ion-list {
-    margin-top: -2vh;
-   border-radius: 50px 50px 0px 0px;
-   margin-left: -0;
-   margin-right: -0;
-    ion-item {
-        margin-left: 8%;
-        margin-right: 8%;
-        margin-top: 34px;
-        border: 1px solid var(--ion-color-light);
-        border-radius: 20px;
-        -webkit-box-shadow: 0 6px 4px -4px var(--ion-color-warning);
-        -moz-box-shadow: 0 6px 4px -4px var(--ion-color-medium);
-        box-shadow: 0 6px 4px -4px var(--ion-color-medium);
-      background-color: rgb(174, 182, 179);
-    }
-    p {
-        font-size: 0.8rem;
-        padding-left: 30vw;
-    }
-}
-ion-button{
-    margin-top: 79px;
-     height: 48px;
-    margin-left: 8%;
-     margin-right: 8%;
-      color:white;
-     border: 1px;
-     background-color: #832823;
-     border-style: solid;
-     border-radius: 30px;
-     margin-left: 10px;
-   
-}
 
-h3{
-    text-align: left;
-    font-family: inherit;
-    font-weight: bolder;
-    color: rgb(238, 242, 245);
-    font-size: 31px;
-    margin-top: 65px;
-     
-   
-  }
-  
-  ion-card{
-    border-radius: 0px;
-  }
-  h6{
-      color: rgb(238, 242, 245);;
-  }
-  ion-icon{
-    color: gray;
-  }
-
-
-
-  #bg {
-    height: 100%;
-    width: 500px;
+.head{
   background-color: #832823;
-    //   background: var(--ion-color-dark) url('https://media.istockphoto.com/id/469090778/photo/interior-of-empty-modern-hair-and-beauty-salon.jpg?b=1&s=170667a&w=0&k=20&c=GGxqz2p8I4PEaMa1OW8sXz06Z0yD-vYsfZA9_nalgjs=') no-repeat center center/cover;
-    // border-radius: 80 0 45% 45%;
-  border-color: #3f0303;
-    position: relative;
-}
-ion-content{
-    background-color: #3f0303;
-}
-   
-
-ion-button{
-    margin-top: 73px;
-    height: 48px;
-    margin-left: 8%;
-    margin-right: 8%;
+  height: 35%;
 }
 
-h3{
-    text-align: left;
-    font-family: inherit;
-    font-weight: bolder;
-    color: rgb(238, 242, 245);
-    font-size: 31px;
-    margin-top: 65px;
-     
-   
-  }
-  
-  .hello{
-   
-    height: 100%;
-    width: 100%;
-  } 
-  h6{
-      color: rgb(238, 242, 245);;
-  }
-  .mbtn{
-    margin-right: 450px;
-    margin-top: -1px;
-    color: white;
-   
-  }
-  ion-menu-button{
-    color: white;
-  }
-  .pbtn{
-    margin-top:-40px;
-    margin-left:50px;
-    color: white;
-  }
-  h1{
-    color: white;
-  }
-  .wbtn{
-    margin-top: -10px;
-    color: white;
-  }
-  .lbtn{
-    color: gray;
-  }
-  .btn{
-     color:#832823 ;
-    margin-top: -10px;
-    border: 1px;
-    background-color: #FFB900;
-    border-style: solid;
-    border-radius: 30px;
-    margin-left: 5px;
-    margin-right: 250px;
-  }
-  .ybtn{
-    margin-top: -3px;
-  color: gray;
-  }
-h2{
-  margin-left: 20px;
-}
-  ion-card {
-  width: 90%;
-  margin-left:30px;
-  margin: 4px; 
-  height: 30%;
- 
-}
-.mmm{
-  margin-left: 10px;
-  font-size: 170%;
+h1{
+margin-top: 100px;
+margin-left: 15px;
+font-weight: 550;
+font-size: 30px;
 }
 
-.btn1{
- font-size: 100%;
-  margin-left: 20px;
- 
-}
-span{
-  color: gray;
-}
-h6{
-  font-size: 15px;
-  color: black;
-}
+.div1{
+  // padding-top: -10px;
+  background-color: #832823;
+  color: white;
 
-.login-section{
-  height: 70vh;
-  width: 100%;
-  max-width: 500px;
-  background: white;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  position: fixed;
-  margin: auto;
-  border-top-left-radius: 46px;
-  border-top-right-radius: 46px;
+}
+.profile{
+  text-align: end;
+  margin-right: 20px;
   
 }
-img{
-  height: 15%;
-  width: 19%;
-  border-radius: 50%;
-  margin: 20px;
-  margin-left: -80px;
+
+.outer{
+background-color: white;
+border-radius:30px 30px 0 0 ;
+padding-top: 40px;
+height: 100%;
 }
 ion-item{
-  margin-top: 40px;
-  border: 1px solid gray;
-  border-radius: 30px;
-}
-h6{
-  color: white;
+margin-top: 40px;
+border: 1px solid gray;
+border-radius: 30px;
 }
 .le{
-  margin-left: 90px;
-  color: gray;
+// margin-left: 90px;
+color: gray;
+text-align: right;
+margin-right: 29px;
 }
 small{
-  font-size: medium;
-  color: black;
-  margin-left: 1px;
+font-size: medium;
+color: black;
+margin-left: 1px;
+}
+ion-button{
+margin-top: 79px;
+ height: 48px;
+// margin-left: 20%;
+//  margin-right: 8%;
+  color:white;
+ border: 1px;
+ text-transform: none;
+ background-color: #832823;
+ border-style: solid;
+ border-radius: 30px;
+ margin-left: 15px;
+
+}
+
+@media (min-width: 768px) {
+.btn1{
+  height: 60%;
+}
+.top1{
+  margin-top: 20px;
+}
+// .le{
+//   margin-left: 190px;
+//   color: gray;
+// }
+// small{
+//   font-size: medium;
+//   color: black;
+//   margin-left: 1px;
+// }
 }

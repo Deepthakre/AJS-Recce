@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">AJS</string>
-    <string name="title_activity_main">AJS</string>
-    <string name="package_name">io.ionic.ajs</string>
-    <string name="custom_url_scheme">io.ionic.ajs</string>
+    <string name="app_name">AJS Recce</string>
+    <string name="title_activity_main">AJS Recce</string>
+    <string name="package_name">io.ionic.ajsreiki</string>
+    <string name="custom_url_scheme">io.ionic.ajsreiki</string>
 </resources>

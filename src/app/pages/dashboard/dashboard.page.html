@@ -1,10 +1,13 @@
+
+
 <ion-content [fullscreen]="true">
   <div id="bg">
     <ion-row>
       <ion-col >
         <p class="mbtn"> <ion-menu-button main="menu" slot="start"></ion-menu-button></p>
         <p class="pbtn">Dashboard</p>
-         
+      </ion-col>
+      </ion-row>
         <!-- <h1>hello Mayur,
       <ion-icon class="mmm" name="person-circle-outline"></ion-icon></h1> -->
         <ion-row >
@@ -16,12 +19,14 @@
           </ion-col> 
           </ion-row>
 
-      
-        <p class="lbtn">Let's get to work</p>
-        <ion-button class="btn" fill="clear" (click)="changeButtonText()" expand="full" ><ion-icon class="ioc" name="log-in-outline"></ion-icon>&nbsp;&nbsp;&nbsp; {{ buttonText }}</ion-button> 
-        <p class="ybtn">your hour will be calculated here</p>
+      <ion-row>
+        <ion-col>
+        <!-- <p class="lbtn">Let's get to work</p> -->
+        <ion-button class="btn" fill="clear" 
+        (click)="changeButtonText()" expand="full" ><ion-icon class="ioc" name="log-in-outline"></ion-icon>&nbsp;&nbsp;&nbsp; {{ buttonText }}</ion-button> 
+        <!-- <p class="ybtn">your hour will be calculated here</p> -->
       </ion-col>
-    </ion-row>
+      </ion-row>
   </div> 
   
 <div class="login-section">
@@ -29,13 +34,13 @@
   <h2>To Visit</h2>
    <ion-row>
     <ion-col size="6">
-      <ion-card class="btn1" routerLink="/details" >
+      <ion-card class="btn1" routerLink="/details" style="width: 100%;height: 80%;">
         <ion-row >
           <ion-col size="6">
             <div class="ion-text-left">
-              <span class="text-statics-small text-dark"> ProjectName:</span>
+              <span class="text-statics-small text-dark"> ProjectName</span>
               <h6>Mayur shelar</h6>
-            </div>
+            </div>  
           </ion-col>
           <ion-col size="6">
             <div class="ion-text-center">
@@ -60,6 +65,8 @@
         </ion-card>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       </ion-col>
+
+
       <ion-col size="6">
         <ion-card class="btn1" routerLink="/details" >
           <ion-row >
@@ -169,77 +176,7 @@
 
 </div>
  
-  <!-- <ion-list lines="none" class="ion-margin" >
  
-    <h2>To Visit</h2>
-   
-      <ion-card class="btn1" routerLink="/details" >
-        <ion-row >
-          <ion-col size="4">
-            <div class="ion-text-center">
-              <span class="text-statics-small text-dark"> ProjectName:</span>
-              <h6>Mayur shelar</h6>
-            </div>
-          </ion-col>
-          <ion-col size="8">
-            <div class="ion-text-center">
-              <span class="text-statics-small text-dark">Date:</span> <br>
-              <h6>6-02-2021</h6>
-            </div>
-          </ion-col>
-          <ion-col size="12" >
-            <div class="ion-text-left">
-              <span class="text-statics-small text-dark">Venue Name</span> <br>
-              <h6>Sosho Kitchen & bar</h6>
-            </div>
-          </ion-col>
-          <ion-col size="12" >
-            <div class="ion-text-left">
-              <span class="text-statics-small text-dark">Contact Number</span> <br>
-              <h6>919350868673</h6>
-            </div>
-          </ion-col>
-        
-        </ion-row>
-      </ion-card>
-   
-     
-     
- 
-    <h2>Visited</h2>
-    
-    <ion-card class="btn1" routerLink="/details1" >
-      <ion-row >
-        <ion-col size="4">
-          <div class="ion-text-center">
-            <span class="text-statics-small text-dark"> ProjectName:</span>
-            <h6>Mayur shelar</h6>
-          </div>
-        </ion-col>
-        <ion-col size="8">
-          <div class="ion-text-center">
-            <span class="text-statics-small text-dark">Date:</span> <br>
-            <h6>6-02-2021</h6>
-          </div>
-        </ion-col>
-        <ion-col size="12" >
-          <div class="ion-text-left">
-            <span class="text-statics-small text-dark">Venue Name</span> <br>
-            <h6>Sosho Kitchen & bar</h6>
-          </div>
-        </ion-col>
-        <ion-col size="12" >
-          <div class="ion-text-left">
-            <span class="text-statics-small text-dark">Contact Number</span> <br>
-            <h6>919350868673</h6>
-          </div>
-        </ion-col>
-      
-      </ion-row>
-    </ion-card>
-      
-    
-  </ion-list> -->
 
  
 </ion-content>

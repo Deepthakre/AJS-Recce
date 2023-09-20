@@ -1,27 +1,42 @@
-<ion-content>
-  <ion-card class="blue-background" fulscreen="true">
-    <ion-card-header><ion-icon class="io" routerLink="/dashboard" name="chevron-back-outline"></ion-icon><h6 class="det">Details</h6></ion-card-header>
+<ion-content style="margin: auto;">
+  <!-- <ion-card class="blue-background" fulscreen="true"> -->
+    <!-- <ion-card-header> -->
+      <!-- <div style="margin-left: 10px;margin-top: 10px;">
+      <ion-icon  routerLink="/home" name="chevron-back-outline"></ion-icon>
+      <h6>Details</h6>
+    </div> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto" style="margin-top: 15px;margin-left: 5px;">
+          <ion-icon name="chevron-back-outline" style="font-size: 18px;" routerLink="/home"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <h6 style="font-size: 18px;margin-left: -10px;margin-top: 14px;" routerLink="/home">Details</h6>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- </ion-card-header> -->
     <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
     
-    <ion-card-content>
-      
-  <ion-grid fixed class="">
+    <!-- <ion-card-content> -->
+      <br>
+  <ion-grid fixed class="" style="margin-left: 10px;margin-right: 10px;">
     <ion-row class="ion-no-padding">
       <ion-col size="8">
         <div class="ion-text-left">
-          <span class="text-statics-small text-dark"> Project Name:</span> <br>
+          <span class="text-statics-small text-dark" style="color: gray;"> Project Name</span> <br>
           <h6>Mayur shelar</h6>
         </div>
       </ion-col>
       <ion-col size="4"> 
-        <div class="ion-text-right">
-          <span class="text-statics-small text-dark">Date:</span> <br>
+        <div class="ion-text-right" style="margin-right: 10px;">
+          <span class="text-statics-small text-dark" style="color: gray;">Date</span> <br>
           <h6>6-02-2021</h6>
         </div>
       </ion-col>
       <ion-col >
         <div class="ion-text-left">
-          <span class="text-statics-small text-dark">Venue Name</span> <br>
+          <span class="text-statics-small text-dark" style="color: gray;">Venue Name</span> <br>
           <h6>Sosho Kitchen & bar</h6>
         </div>
       </ion-col>
@@ -31,7 +46,7 @@
     <ion-row>
       <ion-col >
      
-          <span class="text-statics-small text-dark">Address</span> <br>
+          <span class="text-statics-small text-dark" style="color: gray;">Address</span> <br>
           <h6>Wing -A 202, Orchid business park, militry Rd andheri ,Mumbai 400059</h6>
     
       </ion-col>
@@ -39,63 +54,63 @@
     <ion-row>
       <ion-col >
      
-          <span class="text-statics-small text-dark">Contact No.</span> <br>
+          <span class="text-statics-small text-dark" style="color: gray;">Contact No.</span> <br>
           <h6>+9198764535</h6>
     
       </ion-col>
     </ion-row>
   </ion-grid>
-  
+  <ion-grid style="margin-left: 10px;">
     <ion-row *ngFor="let product of products">
       <ion-col>
-        <p>Venue Structure Image</p>
+        <p style="color: gray;">Venue Structure Images</p>
         <ion-item>
           <ion-thumbnail slot="start">
             <img [src]="product.imageUrl" alt="Product Image">
           </ion-thumbnail>
         </ion-item>
-     <p>Description</p>
+     <p style="color: gray;">Description</p>
         <h6> {{product.description}}</h6>
 
-        <p>Location</p>
+        <p style="color: gray;">Location</p>
         <h6>{{product.location}}</h6>
       </ion-col>
 _____________________________________________________________________________________________
       <ion-col>
-        <p>Reiki Image</p>
+        <p style="color: gray;">Reiki Images</p>
         <ion-item>
           <ion-thumbnail slot="start">
             <img [src]="product.imageUrl" alt="Product Image">
           </ion-thumbnail>
         </ion-item>
-     <p>Description</p>
+     <p style="color: gray;">Description</p>
         <h6> {{product.description}}</h6>
 
-        <p>Location</p>
+        <p style="color: gray;">Location</p>
         <h6>{{product.location}}</h6>
       </ion-col>
 _____________________________________________________________________________________________      
 <ion-col>
-  <p>Video Upload</p>
+  <p style="color: gray;">Video Upload</p>
   <ion-item>
     <ion-thumbnail slot="start">
       <img [src]="product.imageUrl" alt="Product Image">
     </ion-thumbnail>
   </ion-item>
-<p>Description</p>
+<p style="color: gray;">Description</p>
   <h6> {{product.description}}</h6>
 
-  <p>Location</p>
+  <p style="color: gray;">Location</p>
   <h6>{{product.location}}</h6>
 </ion-col>
      </ion-row>
-    
+    </ion-grid>
   
     
     
  
-  </ion-card-content>
+  <!-- </ion-card-content>
   
-  </ion-card>
+  </ion-card> -->
 
 </ion-content>

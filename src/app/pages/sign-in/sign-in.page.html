@@ -1,140 +1,96 @@
-<!-- <ion-content [fullscreen]="true">
-  <div id="bg">
-    <ion-row>
-      <ion-col class="ion-margin">
-        <h3>Sign In</h3>
-        <h6>Lorem ipsum dolor sit amet, consectetuer</h6>  
-      </ion-col>
-    </ion-row>
-  </div>
- 
-
- 
-  <ion-list lines="none" class="ion-margin" >
- 
-    <ion-item class="ion-margin">
-      <ion-input placeholder="Enter Username" type="text" clearInput="true"  > </ion-input>
-      <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
-    </ion-item>
-    <ion-item class="ion-margin">
-      <ion-input placeholder="Enter Password" type="password" clearInput="true" ></ion-input>
-      <ion-icon name="bag-outline" slot="start"></ion-icon>
-      <ion-icon name="eye" slot="end"></ion-icon>
-    </ion-item>
-    <ion-text color="info"><p class="ion-margin-horizontal" routerLink="/forgot">Forgot Password? ? Recover it now.</p></ion-text>
-  
-  <ion-button shape="round" (click)="presentAlert()" expand="full" routerLink="/dashboard" fill="clear"   strong="true" class="ion-margin-end"   >
-    Sign In
+<ion-content > 
+  <!-- <ion-menu contentId="main-content"> -->
     
-  </ion-button>
- 
-    
-    
-  </ion-list>
- 
-</ion-content> -->
-<ion-content [fullscreen]="true">
-  <div id="bg">
-    <ion-row>
-      <ion-col class="ion-margin">
-        <h3 style="margin-top: 90px;">Sign In</h3>
-        <!-- <h6>Lorem ipsum dolor sit amet, consectetuer</h6>   -->
-      </ion-col>
-    </ion-row>
-  </div> 
-  
-<div class="login-section">
-
-  <ion-item class="ion-margin">
-    <ion-input placeholder="Mobile Number"  type="text" clearInput="true"  > </ion-input>
-    <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
-  </ion-item>
-  <ion-item class="ion-margin">
-    <ion-input placeholder="Enter Password" type="password" clearInput="true" [type]="passwordType" ></ion-input>
-    <ion-icon name="bag-outline" slot="start"></ion-icon>
-    <ion-icon name="eye" slot="end"  (click)="hideShowPassword()"></ion-icon>
-  </ion-item>
-  <!-- <ion-text color="info"><p class="ion-margin-horizontal" >Forgot Password? ? Recover it now.</p></ion-text> -->
-  <p class="le">Forgot password ?<small>Recover it now</small> </p>
-<ion-button shape="round" (click)="presentAlert()" expand="full" routerLink="/dashboard" fill="clear"   strong="true" class="ion-margin-end"   >
-  Sign In
-  
-</ion-button> 
-      
-
-</div>
- 
-  <!-- <ion-list lines="none" class="ion-margin" >
- 
-    <h2>To Visit</h2>
+     
+    <!-- <ion-content>
    
-      <ion-card class="btn1" routerLink="/details" >
-        <ion-row >
-          <ion-col size="4">
-            <div class="ion-text-center">
-              <span class="text-statics-small text-dark"> ProjectName:</span>
-              <h6>Mayur shelar</h6>
-            </div>
-          </ion-col>
-          <ion-col size="8">
-            <div class="ion-text-center">
-              <span class="text-statics-small text-dark">Date:</span> <br>
-              <h6>6-02-2021</h6>
-            </div>
-          </ion-col>
-          <ion-col size="12" >
-            <div class="ion-text-left">
-              <span class="text-statics-small text-dark">Venue Name</span> <br>
-              <h6>Sosho Kitchen & bar</h6>
-            </div>
-          </ion-col>
-          <ion-col size="12" >
-            <div class="ion-text-left">
-              <span class="text-statics-small text-dark">Contact Number</span> <br>
-              <h6>919350868673</h6>
-            </div>
-          </ion-col>
+      <ion-icon class="left" name="person-circle-outline"></ion-icon><h3>Mayur Anil Shelar</h3>
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-label> Visit List </ion-label>
+          <ion-icon slot="start" color="danger" name="location-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-label> Visited List </ion-label>
+           <ion-icon slot="start" name="location-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+     
+      <ion-menu-toggle>
+        <ion-item routerLink="/my-attendance">
+          <ion-label> Attendance </ion-label>
+          <ion-icon slot="start" name="person-add-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+      
+  
+    </ion-content> -->
+    <!-- <ion-button class="button3" fill="clear" (click)="getLogout()">
+      <ion-icon slot="start" style="font-size: 25px;margin: 5px;height: 20px;" name="exit-outline"></ion-icon>
+      Log Out  </ion-button>
+  </ion-menu> -->
+        <div class="head"  id="main-content"> 
+          <!-- <ion-buttons slot="start" style="color: white;">
+          <ion-menu-button style="margin-left: 10px;" ></ion-menu-button>
+          <ion-title>Dashbord</ion-title>
+        </ion-buttons>
+        -->
         
-        </ion-row>
-      </ion-card>
-   
-     
-     
- 
-    <h2>Visited</h2>
     
-    <ion-card class="btn1" routerLink="/details1" >
-      <ion-row >
-        <ion-col size="4">
-          <div class="ion-text-center">
-            <span class="text-statics-small text-dark"> ProjectName:</span>
-            <h6>Mayur shelar</h6>
-          </div>
-        </ion-col>
-        <ion-col size="8">
-          <div class="ion-text-center">
-            <span class="text-statics-small text-dark">Date:</span> <br>
-            <h6>6-02-2021</h6>
-          </div>
-        </ion-col>
-        <ion-col size="12" >
-          <div class="ion-text-left">
-            <span class="text-statics-small text-dark">Venue Name</span> <br>
-            <h6>Sosho Kitchen & bar</h6>
-          </div>
-        </ion-col>
-        <ion-col size="12" >
-          <div class="ion-text-left">
-            <span class="text-statics-small text-dark">Contact Number</span> <br>
-            <h6>919350868673</h6>
-          </div>
-        </ion-col>
-      
-      </ion-row>
-    </ion-card>
-      
-    
-  </ion-list> -->
+      <div class="div1">
+        <ion-grid>
+          <ion-row>   
+            <!-- <ion-col class="ion-padding-start ">          <ion-label style="font-size: 20px;font-weight: 700;"> Hello Mayur,</ion-label><br>
+              <ion-label style="font-size: 12px; ">Welcome To Your Account</ion-label>
+            </ion-col> -->
+            <!-- <ion-col class="profile" > 
+            <ion-icon class="left1" name="person-circle-outline" style="font-size: 45px; padding-top: 0% ;"></ion-icon> 
+            </ion-col> -->
+            <h1>Sign In</h1>
+          </ion-row>
+        </ion-grid> 
+        <br>
+      </div>
 
- 
-</ion-content>
+      <div class="div1">
+        <ion-grid>
+          <ion-row class="ion-padding-start " style="padding-bottom: 0%; margin-bottom: 0%;">
+       <!-- <p style="font-size: 12px;">let's get to work</p>-->
+      </ion-row> 
+       <ion-row style="padding-bottom: 0%; margin-bottom: 0%;">
+       <!-- <ion-button (click)="changeButtonText()"  class="button2" fill="clear"><ion-icon slot="start" style="font-size: 25px;margin: 5px;height: 20px;" name="exit-outline"></ion-icon>
+        {{ buttonText }}</ion-button> -->
+        <!-- <p>Your hours will be calculated here</p> -->
+  
+      </ion-row>
+      <ion-row class="ion-padding-start " style="padding-bottom: 0%; margin-bottom: 0%;">
+        <!-- <p style="font-size: 12px;">Your hours will be calculated here</p> -->
+        </ion-row> 
+      </ion-grid>
+      </div>
+
+
+      <div class="outer">    
+        <ion-item class="ion-margin">
+          <ion-input placeholder="Mobile Number"  type="text" clearInput="true"  > </ion-input>
+          <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
+        </ion-item>
+        <ion-item class="ion-margin">
+          <ion-input placeholder="Enter Password" type="password" clearInput="true" [type]="passwordType" ></ion-input>
+          <ion-icon name="bag-outline" slot="start"></ion-icon>
+          <ion-icon name="eye" slot="end"  (click)="hideShowPassword()"></ion-icon>
+        </ion-item>
+      
+        <p class="le">Forgot password ?<small>Recover it now</small> </p>
+      <ion-button shape="round" expand="full"  routerLink="/home" fill="clear" class="ion-margin-end"   >
+       <b>Sign In</b>
+        
+      </ion-button> 
+      </div>
+    </div>
+    </ion-content>
+  
+  
+  

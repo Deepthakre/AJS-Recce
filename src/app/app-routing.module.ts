@@ -32,6 +32,11 @@ const routes: Routes = [
     path: 'my-attendance',
     loadChildren: () => import('./pages/my-attendance/my-attendance.module').then( m => m.MyAttendancePageModule)
   },
+  {
+    path: 'rough',
+    loadChildren: () => import('./rough/rough.module').then( m => m.RoughPageModule)
+  },
+  
 ];
 
 @NgModule({

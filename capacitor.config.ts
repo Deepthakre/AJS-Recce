@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.ajs',
-  appName: 'AJS',
+  appId: 'io.ionic.ajsreiki',
+  appName: 'AJS Recce',
   webDir: 'www',
   plugins: {
     SplashScreen: {

@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "io.ionic.ajs",
+  "applicationId": "io.ionic.ajsreiki",
   "variantName": "release",
   "elements": [
     {

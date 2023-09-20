@@ -67,14 +67,17 @@
 </ion-content> -->
 
 
-<ion-content [fullscreen]="true">
+<!-- 2 nd part -->
+
+
+<!-- <ion-content [fullscreen]="true">
   <ion-card class="blue-background">
- <ion-card-header><ion-icon class="io" routerLink="/dashboard" name="chevron-back-outline"></ion-icon><h6 class="det">Details</h6></ion-card-header>
+ <ion-card-header><ion-icon class="io" routerLink="/dashboard" name="chevron-back-outline"></ion-icon><h6 class="det">Details</h6></ion-card-header> -->
     <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
     
-    <ion-card-content>
+    <!-- <ion-card-content> 
       
-  <ion-grid fixed class="">
+  <ion-grid fixed>
     <ion-row class="ion-no-padding">
       <ion-col size="6">
         <div class="ion-text-center">
@@ -108,20 +111,20 @@
       <ion-col size="12">
      
           <span class="text-statics-small text-dark">Contact No.</span> <br>
-          <h6>+9198764535</h6>
+          <h6>+9198764535</h6> -->
           <!-- <ion-button shape="round" class="btm" fill="clear">Hold</ion-button>&nbsp;&nbsp; -->
-          <ion-button shape="round"  fill="clear" class="btm">Hold</ion-button>&nbsp;&nbsp;
+          <!-- <ion-button shape="round"  fill="clear" class="btm">Hold</ion-button>&nbsp;&nbsp;
           <ion-button shape="round" class="btm1" fill="clear">cancel</ion-button>
           <ion-textarea label="textarea" labelPlacement="floating" fill="solid" placeholder="Enter text"></ion-textarea>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col >
+      <ion-col > -->
      
           <!-- <span class="text-statics-small text-dark">Contact No.</span> <br>
           <h6>+9198764535</h6> -->
     
-      </ion-col>
+      <!-- </ion-col>
     </ion-row>
   </ion-grid>
   
@@ -219,4 +222,168 @@
   </ion-card-content>
   </ion-card>
   
+</ion-content> -->
+
+<ion-content style="margin-left: auto;">
+  <!-- <ion-card class="blue-background"> -->
+ <ion-card-header><ion-icon class="io" routerLink="/home" name="chevron-back-outline"></ion-icon><h6 class="det" routerLink="/home">Details</h6></ion-card-header>
+    <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
+    
+    <!-- <ion-card-content>  -->
+      
+  <ion-grid>
+    <ion-row style="margin-left: 60px;"> 
+      <ion-col size="6">
+        <div class="ion-text-left">
+          <span  class="text-statics-small text-dark tex" style="color: gray;"> Project Name</span> <br>
+          <h6 class="tex">Mayur shelar</h6>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="ion-text-center">
+          <span class="text-statics-small text-dark" style="color: gray;">Date</span> <br>
+          <h6>6-02-2021</h6>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row style="margin-left: 20px;">
+      <ion-col size="12">
+        <div class="ion-text-left">
+          <span class="text-statics-small text-dark" style="color: gray;">Venue Name</span> <br>
+          <h6>Sosho Kitchen & bar</h6>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-left: 20px;">
+      <ion-col size="12">
+     
+          <span class="text-statics-small text-dark" style="color: gray;">Address</span> <br>
+          <h6>Wing -A 202, Orchid business park, militry Rd andheri ,Mumbai 400059</h6>
+    
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-left: 20px;">
+      <ion-col size="12">
+     
+          <span class="text-statics-small text-dark" style="color: gray;">Contact No.</span> <br>
+          <h6>+9198764535</h6>
+          <br>
+          <!-- <ion-button shape="round" class="btm" fill="clear">Hold</ion-button>&nbsp;&nbsp; -->
+          <ion-button shape="round"  fill="clear" class="btm">Hold</ion-button>&nbsp;&nbsp;
+          <ion-button shape="round" class="btm1" fill="clear">cancel</ion-button>
+          <ion-textarea style="border: 1px solid gray;" label="textarea" labelPlacement="floating" fill="solid" placeholder="Enter text"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+     
+          <!-- <span class="text-statics-small text-dark">Contact No.</span> <br>
+          <h6>+9198764535</h6> -->
+    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+    <ion-row style="margin-left: 20px;">
+      <ion-col>
+        <p style="color: gray;">Upload Multiple Images</p>
+         
+          <ion-button class="margin" color="light">Upload Photos</ion-button>
+          <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+       
+      </ion-col>
+     </ion-row>
+      <ion-item style="border: 1px solid gray;" >
+        <ion-input placeholder="Description" type="text" clearInput="true"> </ion-input>
+        
+      </ion-item>
+     
+      <ion-item style="border: 1px solid gray;" >
+        <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+  </ion-item>
+
+  <ion-row style="margin-left: 20px;">
+    <ion-col>
+     
+       
+        <ion-button class="margin" color="light">Upload Photos</ion-button>
+        <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+        <ion-icon class="left" name="trash-outline"></ion-icon>
+    </ion-col>
+   </ion-row>
+    <ion-item style="border: 1px solid gray;" >
+      <ion-input placeholder="Description"  type="text" clearInput="true"> </ion-input>
+      
+    </ion-item> 
+   
+    <ion-item style="border: 1px solid gray;" >
+      <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+
+    
+
+</ion-item>
+<ion-row style="margin-left: 20px;">
+  <ion-col>
+    <p style="color: gray;">Clean Images</p>
+     
+      <ion-button class="margin" color="light">Upload Photos</ion-button>
+      <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+   
+  </ion-col>
+ </ion-row>
+  <ion-item style="border: 1px solid gray;" >
+    <ion-input placeholder="Description" type="text" clearInput="true"> </ion-input>
+    
+  </ion-item>
+ 
+  <ion-item style="border: 1px solid gray;" >
+    <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+
+  
+
+</ion-item>
+
+<ion-row style="margin-left: 20px;">
+  <ion-col>
+    <p style="color: gray;">Video Upload (max 2)</p>
+     
+      <ion-button class="margin" color="light">Upload Video</ion-button>
+      <ion-icon class="ion" name="add-circle-outline"></ion-icon>
+   
+  </ion-col>
+ </ion-row>
+  <ion-item style="border: 1px solid gray;" >
+    <ion-input placeholder="Description" type="text" clearInput="true"> </ion-input>
+    
+  </ion-item>
+ 
+  <ion-item style="border: 1px solid gray;"  >
+    <ion-input placeholder="Location" type="text" clearInput="true"> </ion-input>
+
+  
+
+</ion-item> 
+<br><br><br><br>
+<ion-row>
+  
+  <ion-col>
+    <ion-button 
+    style="text-transform: capitalize; margin: auto; width: 90%; margin-bottom: 10px; position: absolute; bottom: 10px; left: 5%; right: 5%;"
+    shape="round"  expand="full" routerLink="/details1" fill="clear"   strong="true" class="ion-margin"   >
+    Submit
+      
+    </ion-button>
+  </ion-col>
+  
+</ion-row>
+
+  <!-- </ion-card-content>
+  </ion-card>
+   -->
 </ion-content>
+
+<!-- <ion-button style="text-transform: capitalize; margin: auto; width: 90%; margin-bottom: 10px; position: absolute; bottom: 15px; left: 5%; right: 5%;" color="tertiary" id="open-modal" expand="block">Generate OTP Verification and E-sign</ion-button> -->

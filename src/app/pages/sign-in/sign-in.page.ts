@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import {  MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.page.html',
@@ -7,20 +8,20 @@ import { AlertController } from '@ionic/angular';
 })
 export class SignInPage implements OnInit {
 
-  constructor(private alertController: AlertController) { }
+  constructor(private alertController: AlertController,public menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
-  async presentAlert() {
-    const alert = await this.alertController.create({
-      header: 'Profile Info',
-      subHeader: 'Name:Mayur  mobile number:934567667777',
-      // message: '',
-      buttons: ['OK'],
-    });
+  // async presentAlert() {
+  //   const alert = await this.alertController.create({
+  //     header: 'Profile Info',
+  //     subHeader: 'Name:Mayur  ',
+  //    message: 'mobile number:934567667777',
+  //     buttons: ['OK'],
+  //   });
 
-    await alert.present();
-  }
+  //   await alert.present();
+  // }
   buttonText: string = "Punch In";
 
   changeButtonText() {
@@ -33,4 +34,7 @@ export class SignInPage implements OnInit {
      this.passwordType = this.passwordType === 'text' ? 'password' : 'text';
      this.passwordIcon = this.passwordIcon === 'eye-off' ? 'eye' : 'eye-off';
  }
-}
+ ionViewWillEnter() {
+  this.menuCtrl.enable(false);
+ }
+} 

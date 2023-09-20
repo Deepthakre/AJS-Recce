@@ -48,7 +48,7 @@ h3{
     color: white;
   }
   .pbtn{
-    margin-top:-40px;
+    margin-top:-35px;
     margin-left:50px;
     color: white;
   }
@@ -80,6 +80,7 @@ h3{
     border-radius: 30px;
     margin-left: 5px;
     margin-right: 260px;
+    margin-top: 10px;
   }
   .ybtn{
     margin-top: -3px;
@@ -90,11 +91,11 @@ h2{
   margin-left: 22px;
 }
   ion-card {
-  width: 300%;
+  width: 90%;
   margin-left:30px;
   margin: 4px; 
   height: 30%;
-  border-left: 2px solid red;
+  border-left: 3px solid  #3f0303;
 }
 .ioc{
   font-size: 200%;
@@ -123,8 +124,8 @@ h6{
 }
 
 .login-section{
-  height: 63vh;
-  width: 300%;
+  height: 62vh;
+  width: 100%;
   max-width: 500px;
   background: white;
   right: 0;
@@ -143,3 +144,9 @@ img{
   margin: 20px;
   margin-left: -80px;
 }
+
+// @media (min-width: 768px) {
+//   .margin1{
+//     margin-left: 500px;
+//   }
+// }

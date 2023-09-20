@@ -1,0 +1,84 @@
+.button3{
+  background-color: #832823;
+    border-radius: 8px;
+    color: white;
+    width: 35%;
+    height: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+    padding: auto;
+    margin-bottom: 20px;
+  }
+  .head{
+    background-color: #832823;
+    height: 35%;
+  }
+  
+  .left1{
+    font-size: 200%;
+    margin-top: -1px;
+    margin-left: 12px;
+  }
+  .left{
+    font-size: 200%;
+    margin-top: 22px;
+    margin-left: 12px;
+  }
+  h3{
+    margin-top: -34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+  }
+
+  .div1{
+    // padding-top: -10px;
+    background-color: #832823;
+    color: white;
+
+  }
+  .profile{
+    text-align: end;
+    margin-right: 20px;
+    
+  }
+  .button2{
+background-color: rgb(249, 183, 14);
+border-radius: 30px;
+width: 230px;
+height: 50px;
+color: #3f0303;
+font-size: 15px;
+font-weight: 600;
+padding-top: 0px;
+}
+.outer{
+  background-color: white;
+  border-radius:30px 30px 0 0 ;
+  padding-top: 40px;
+  height: 100%;
+}
+ion-card{
+  border-left: 3px solid  #832823;
+} 
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn1{
+    height: 60%;
+  }
+  .top1{
+    margin-top: 20px;
+  }
+}
